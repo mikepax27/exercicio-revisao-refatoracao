@@ -3,6 +3,8 @@
 
 #include "Empregado.hpp"
 
+const int META_MESES = 12;
+
 class Vendedor : public Empregado {
     protected:
 	    double quotaMensalVendas;

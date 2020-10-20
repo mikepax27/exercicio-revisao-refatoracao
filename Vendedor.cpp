@@ -1,7 +1,7 @@
 #include "Vendedor.hpp"
 
 double Vendedor::quotaTotalAnual() const{
-	return quotaMensalVendas * 12;
+	return quotaMensalVendas * META_MESES;
 }
 	
 double Vendedor::getQuotaMensalDeVendas() const {

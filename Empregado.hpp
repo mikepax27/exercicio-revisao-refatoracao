@@ -8,8 +8,8 @@ const double HORAS_DIARIAS = 8;
 
 class Empregado {
     protected:
-        double salarioHora;
-        std::string nome;  
+        std::string nome;
+        double salarioHora; 
 	
     public:
         Empregado(std::string nome, double salarioHora) : nome(nome), salarioHora(salarioHora) {};
