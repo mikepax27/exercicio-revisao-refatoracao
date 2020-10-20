@@ -1,5 +1,6 @@
-#include "Engenheiro.cpp"
-#include "Vendedor.cpp"
+#include "Engenheiro.hpp"
+#include "Vendedor.hpp"
+#include "Empregado.hpp"
 
 int main() {
 

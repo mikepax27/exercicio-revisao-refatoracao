@@ -1,10 +1,5 @@
 #include "Empregado.hpp"
 
-Empregado::Empregado(std::string nome, double salarioHora){
-    this->nome = nome;
-    this->salarioHora = salarioHora;
-}
-
 double Empregado::pagamentoMes(double horasTrabalhadas) {
 
     double calculoHoras = horasTrabalhadas;
@@ -29,3 +24,8 @@ std::string Empregado::getNome () const {
 double Empregado::getSalarioHora() const {
     return this->salarioHora;
 }
+
+void Empregado::imprimeContracheque(double horasTrabalhadas) {
+    std::cout << "Nome: " << this->nome << std::endl;
+    std::cout << "Salario Mes: " << this->pagamentoMes(horasTrabalhadas) << std::endl;
+}  

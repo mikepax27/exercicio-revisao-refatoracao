@@ -4,10 +4,12 @@
 #include "Empregado.hpp"
 
 class Vendedor : public Empregado {
+    protected:
+	    double quotaMensalVendas;
 
     public:
         Vendedor(std::string nome, double salarioHora, double quotaMensalVendas) 
-            : Empregado(nome, salarioHora), quotaMensalVendas(quotaMensalVendas) {}
+            : Empregado(nome, salarioHora), quotaMensalVendas(quotaMensalVendas) {};
 
         double quotaTotalAnual() const;
 
@@ -16,9 +18,6 @@ class Vendedor : public Empregado {
         double getQuotaMensalDeVendas ()const;
 
         void imprimeContracheque(double horasTrabalhadas) ;
-
-    protected:
-	    double quotaMensalVendas;
 };
 
 #endif

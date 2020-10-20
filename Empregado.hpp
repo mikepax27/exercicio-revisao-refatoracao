@@ -7,9 +7,12 @@
 const double HORAS_DIARIAS = 8;
 
 class Empregado {
+    protected:
+        double salarioHora;
+        std::string nome;  
 	
     public:
-        Empregado(std::string nome, double salarioHora);
+        Empregado(std::string nome, double salarioHora) : nome(nome), salarioHora(salarioHora) {};
 
         double pagamentoMes(double horasTrabalhadas);
 
@@ -20,10 +23,6 @@ class Empregado {
         double getSalarioHora () const;
 
         virtual void imprimeContracheque(double horasTrabalhadas);        
-
-    protected:
-        double salarioHora;
-        std::string nome;  
 };
 
 #endif
