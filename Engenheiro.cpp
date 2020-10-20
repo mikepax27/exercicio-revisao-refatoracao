@@ -1,11 +1,15 @@
-#include <string>
-#include "Empregado.hpp"
+#include "Engenheiro.hpp"
 
-class Engenheiro : public Empregado {
+void Engenheiro::setProjetos(int projetos) {
+    this->projetos = projetos;
+}
 
-  public:
-    std::string nome;  
-	int projetos;
-	
-};
+int Engenheiro::getProjetos() const {
+    return this->projetos;
+}
 
+void Engenheiro::imprimeContracheque(double horasTrabalhadas) {
+    std::cout << "Nome: " << this->nome << std::endl;
+    std::cout << "Salario Mes: " << this->pagamentoMes(horasTrabalhadas) << std::endl;
+    std::cout << "Projetos: " << this->projetos << std::endl;
+}  
